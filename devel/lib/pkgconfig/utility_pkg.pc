@@ -1,0 +1,8 @@
+prefix=/home/vicon/human_metric/devel
+
+Name: utility_pkg
+Description: Description of utility_pkg
+Version: 0.0.0
+Cflags: -I/home/vicon/human_metric/devel/include
+Libs: -L/home/vicon/human_metric/devel/lib 
+Requires: 

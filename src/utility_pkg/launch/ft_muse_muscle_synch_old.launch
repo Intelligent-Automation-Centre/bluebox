@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- The planning and execution components of MoveIt! configured to run -->
+    <!-- using the ROS-Industrial interface. -->
+
+    <param name="masterTime" command="date +'%d-%m-%Y_%Ih%Mm%S'"/>
+
+    <!-- the "sim" argument controls whether we connect to a Simulated or Real robot -->
+    <!--  - if sim=false, a robot_ip argument is required -->
+    <!--arg name="sim" default="true" /-->
+    <!--arg name="robot_ip" unless="$(arg sim)" -->
+<!-- ROS master PC: FT sensor node -->
+
+    <arg  name="ip_address"  default="192.168.1.1"/>
+    <arg  name="bias"	 default="False"/>
+    <arg  name="rate" 	 default="100"/>
+    <arg  name="frame_id"    default="myframe"/>
+    <arg  name="alpha"	 default="0" />
+    <arg  name="rot"	 default="0"/>
+    <arg  name="scale_x"	 default="1"/>
+    <arg  name="scale_y"	 default="1"/>
+    <arg  name="scale_z"	 default="1"/>
+
+
+    <group ns="ft_sensor">
+    <param name="frame_id" type="str" value="$(arg frame_id)"/>
+    <node name="force_torque_sensor" pkg="netft_rdt_driver" type="netft_node"
+    	    args="--address $(arg ip_address) --rate $(arg rate) --bias $(arg bias) --rot $(arg rot) --alpha $(arg alpha) --scale_x $(arg scale_x) --scale_y $(arg scale_y) --scale_z $(arg scale_z)"
+    		 required="true" output="screen"/>
+    </group>
+    <!-- ROS master PC: force node -->
+    <node name="force_torque_sensor" pkg="netft_rdt_driver" type="netft_node">
+
+    <!-- ROS master PC: muscle_eg_signal filter -->
+    <node
+       name="message_synchronizer"
+       pkg="ROS master PC"
+       type="msgsuscle_ft_synch_node"
+     />
+
+     <!--################################################### -->
+     <!-- Blue Box Pi -->
+     <machine
+       name="blue_box"
+       address="123.124.125.101"
+       user="ubuntu"
+       password="ubuntu"
+       timeout="10"
+       env-loader="/home/ubuntu/Desktop/human_metric/remote_env_loader.sh"
+      />
+
+
+           <!-- Time Node -->
+           <node
+             machine="blue_box"
+             name="pi_time"
+             pkg="utility_pkg"
+             type="force_pi_time.py"
+             />
+
+
+          <!-- Muscle node /-->
+          <node
+            machine="blue_box"
+            name="muscle_activity_node"
+            pkg="muscle_activity"
+            type="muscle_activity_pub.py"
+            />
+
+
+          <!-- Muse headband node -->
+          <node
+            machine="blue_box"
+            name="muse_signal_node"
+            pkg="muse_signal"
+            type="muse_pub.py"
+            launch-prefix="sudo"
+            />
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/vicon/human_metric/install
+
+Name: nose_temp
+Description: Description of nose_temp
+Version: 0.0.0
+Cflags: -I/home/vicon/human_metric/install/include
+Libs: -L/home/vicon/human_metric/install/lib 
+Requires: 

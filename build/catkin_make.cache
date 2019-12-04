@@ -1,0 +1,2 @@
+message_synch:muscle_activity:muse_signal:net-ft-ros:nose_temp:utility_pkg
+-DCATKIN_DEVEL_PREFIX=/home/vicon/human_metric/devel -DCMAKE_INSTALL_PREFIX=/home/vicon/human_metric/install -G Unix Makefiles

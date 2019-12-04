@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse-pydev version="1.0"?>
+
+<pydev_project>
+<pydev_property name="org.python.pydev.PYTHON_PROJECT_INTERPRETER">Default</pydev_property>
+<pydev_property name="org.python.pydev.PYTHON_PROJECT_VERSION">python 2.6</pydev_property>
+<pydev_pathproperty name="org.python.pydev.PROJECT_EXTERNAL_SOURCE_PATH">
+<path>/opt/ros/kinetic/share/mk</path>
+<path>/usr/local/lib/python2.7/dist-packages/emokit-0.0.9-py2.7.egg</path>
+<path>/home/vicon/Downloads/emokit/python/.eggs/pyhidapi-0.0.2-py2.7.egg</path>
+<path>/usr/local/lib/python2.7/dist-packages/w3lib-1.21.0-py2.7.egg</path>
+<path>/usr/local/lib/python2.7/dist-packages/Scrapy-1.8.0-py2.7.egg</path>
+<path>/usr/local/lib/python2.7/dist-packages/Protego-0.1.15-py2.7.egg</path>
+<path>/usr/local/lib/python2.7/dist-packages/queuelib-1.5.0-py2.7.egg</path>
+<path>/usr/local/lib/python2.7/dist-packages/pyOpenSSL-19.0.0-py2.7.egg</path>
+<path>/usr/local/lib/python2.7/dist-packages/PyDispatcher-2.0.5-py2.7.egg</path>
+<path>/usr/local/lib/python2.7/dist-packages/parsel-1.5.2-py2.7.egg</path>
+<path>/usr/local/lib/python2.7/dist-packages/cssselect-1.1.0-py2.7.egg</path>
+<path>/usr/local/lib/python2.7/dist-packages/cryptography-2.8-py2.7-linux-x86_64.egg</path>
+<path>/usr/local/lib/python2.7/dist-packages/cffi-1.13.2-py2.7-linux-x86_64.egg</path>
+<path>/usr/local/lib/python2.7/dist-packages/pycparser-2.19-py2.7.egg</path>
+<path>/home/vicon/human_metric/devel/lib/python2.7/dist-packages</path>
+<path>/opt/ros/kinetic/lib/python2.7/dist-packages</path>
+<path>/usr/lib/python2.7</path>
+<path>/usr/lib/python2.7/plat-x86_64-linux-gnu</path>
+<path>/usr/lib/python2.7/lib-tk</path>
+<path>/usr/lib/python2.7/lib-dynload</path>
+<path>/home/vicon/.local/lib/python2.7/site-packages</path>
+<path>/usr/local/lib/python2.7/dist-packages</path>
+<path>/usr/lib/python2.7/dist-packages</path>
+<path>/usr/lib/python2.7/dist-packages/PILcompat</path>
+<path>/usr/lib/python2.7/dist-packages/gtk-2.0</path>
+<path>/usr/lib/python2.7/dist-packages/wx-3.0-gtk2</path>
+</pydev_pathproperty>
+</pydev_project>

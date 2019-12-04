@@ -1,0 +1,8 @@
+prefix=/home/vicon/human_metric/devel
+
+Name: muse_signal
+Description: Description of muse_signal
+Version: 0.0.0
+Cflags: -I/home/vicon/human_metric/devel/include
+Libs: -L/home/vicon/human_metric/devel/lib 
+Requires: 
