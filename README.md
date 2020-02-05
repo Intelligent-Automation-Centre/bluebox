@@ -12,9 +12,9 @@ Academics at the University of Nottingham, Cranfield University, Loughborough Un
 This ROS package was devloped as part of WP4, which focus on wearable sensors for human in manufacturing context i.e. robotics.
 
 ### How to install?
-"bash
+```python
 sudo git clone 
-"
+```
 
 
 ### ROS dependancy
