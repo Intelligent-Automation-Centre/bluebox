@@ -14,7 +14,8 @@ This ROS package was devloped as part of WP4, which focus on wearable sensors fo
 The wearable sensors in human-robot collaborations could improve the interactions and make it safer. For instances, wearable sensors can assist in recognising the human mental state and physical activities. Subsequently, a robot could effectively and naturally perform the given task with the human. Moreover, the gathered data through the presented hardware enables online classification of human aims; consequently, robots can efficiently adapt to guarantee the safety of the human while performing the intended task. 
 
 ## Other ROS packages:
-This package can be used with Force/Torque sensors (e.g. http://wiki.ros.org/ati_force_torque), motion tracking systems (e.g. VICON: https://github.com/ethz-asl/vicon_bridge). The idea here , that messages from the surrounding enviromenet (Human-Robot workspace) can be synchronised.  
+This package can be used with Force/Torque sensors (e.g. http://wiki.ros.org/ati_force_torque), motion tracking systems (e.g. VICON: https://github.com/ethz-asl/vicon_bridge), and IMU (). The idea here , that messages from the surrounding enviromenet (Human-Robot workspace) can be synchronised.  
+
 
 ### How to install?
 ```python
