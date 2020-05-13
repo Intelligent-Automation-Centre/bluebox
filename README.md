@@ -13,17 +13,62 @@ This ROS package was devloped as part of WP4, which focus on wearable sensors fo
 
 The wearable sensors in human-robot collaborations could improve the interactions and make it safer. For instances, wearable sensors can assist in recognising the human mental state and physical activities. Subsequently, a robot could effectively and naturally perform the given task with the human. Moreover, the gathered data through the presented hardware enables online classification of human aims; consequently, robots can efficiently adapt to guarantee the safety of the human while performing the intended task. 
 
+![Figure1](https://github.com/Intelligent-Automation-Centre/bluebox/blob/master/weabaleSensor-page-001.jpg)
+
+## Hardware setup:
+The blue-box with all sensors connected to it, which can be carried on the operator's belt, and it is connected with the workstation via WiFi. The box is connected to four muscle activity sensors (https://www.sparkfun.com/products/13723), nose digital temperature and Phedgit IMU (https://www.phidgets.com/) for head movements via shield cables, while it is connected to a Muse2 headband (https://choosemuse.com/muse-2-guided-bundle/) via Bluetooth. These sensors are interfaced with the Raspberry-Pi using two interface circuits and a USB Bluetooth dongle.
+![](https://github.com/Intelligent-Automation-Centre/bluebox/blob/master/figure3_updated-page-001.jpg)
+
+#### Muscle-activity sensor interface circuit
+![](https://github.com/Intelligent-Automation-Centre/bluebox/blob/master/wiring_diagram-page-001.jpg)
+## Biomechanical ROS mesasges:
+### Heart rate
+The presented hardware is supported by three ROS messages which are structured as shown in the table below. These messages contains raw sensory data, Interbeat interval (ibi) and Beat-Per-Minute (BPM).
+
+|     Message   | Data Structure|
+| ------------- | ------------- |
+| heart_beat_rawdata | header, raw_data  |
+| hear_beat_msg  | header, ibi  |
+| hear_beat_msg  | header, BPM  |
+
+### Brain-Wave Signals
+|     Message Field   | Data Type|
+| ------------- | ------------- |
+| Header        | header        |
+| TP9           | float64       |
+| AF7           | float64       |
+| AF8           | float64       |
+| TP10          | float64       |
+
+### Muscle activity message
+|     Message Field   | Data Type|
+| ------------- | ------------- |
+| Header        | header        |
+| Right_arm     | float64       |
+| Right_forearm | float64       |
+| Left_arm      | float64       |
+| Left_forearm  | float64       |
+
+### Nose temperature
+|  Message Field   | Data Type|
+| ------------- | ------------- |
+| Header        |   header      |
+| temperature   |     float64   |
+| variance      | float64       |
+
+ 
+
 ## Other ROS packages:
-This package can be used with Force/Torque sensors (e.g. http://wiki.ros.org/ati_force_torque), motion tracking systems (e.g. VICON: https://github.com/ethz-asl/vicon_bridge), and IMU (). The idea here , that messages from the surrounding enviromenet (Human-Robot workspace) can be synchronised.  
+This package can be used with Force/Torque sensors (e.g. http://wiki.ros.org/ati_force_torque), motion tracking systems (e.g. VICON: https://github.com/ethz-asl/vicon_bridge), and IMU (). The idea here , that messages from the surrounding enviromenet (Human-Robot workspace) can be synchronised.
 
-
-### How to install?
+## How to install?
 ```python
 sudo git clone 
 ```
 
-
 ### ROS dependancy
 
 ### Ubuntu Mate image for Rassberry Pi
+
+### PI-ZERO image
 
