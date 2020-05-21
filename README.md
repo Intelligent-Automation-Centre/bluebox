@@ -76,7 +76,7 @@ This package can be used with Force/Torque sensors (e.g. http://wiki.ros.org/ati
 
 ## How to install?
 ```python
-sudo git clone 
+sudo git clone https://github.com/Intelligent-Automation-Centre/bluebox.git
 ```
 
 ### ROS dependancy
@@ -85,3 +85,5 @@ sudo git clone
 
 ### PI-ZERO image
 
+## Aknowledgment
+This work was funded by the EPSRC as part of the “Digital Toolkit for optimisation of operators and technology in manufacturing partnerships” project (DigiTOP; EP/R032718/1).
