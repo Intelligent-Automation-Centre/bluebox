@@ -8,6 +8,8 @@ import numpy as np
 import message_filters
 from geometry_msgs import msg
 
+
+''' This Script synchronise EMG muscle signals with Force/Torqe Signals '''
 rospy.init_node('py_message_synchroniser', anonymous=True)
 rate = rospy.Rate(10000)
 _muscle_sync_pub=rospy.Publisher('/muscle_eg_sync',muscle_eg_signal,queue_size=100)
