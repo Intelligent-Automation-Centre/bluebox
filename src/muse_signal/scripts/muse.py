@@ -4,14 +4,24 @@ import numpy as np
 from time import time, sleep
 from sys import platform
 
+''' This code is based on:
+Alexandre Barachant, Dano Morrison, Hubert Banville, Jason Kowaleski, Uri Shaked,
+Sylvain Chevallier, & Juan Jesús Torre Tresols. (2019, May 25). 
+muse-lsl (Version v2.0.2). Zenodo. 
+http://doi.org/10.5281/zenodo.3228861
+
+Github: https://github.com/alexandrebarachant/muse-lsl'''
+
 
 class Muse():
-    """Muse 2016 headband"""
+    """Muse 2"""
 
     def __init__(self, address=None, callback=None, eeg=True, accelero=False,
                  giro=False, backend='auto', interface=None, time_func=time,
                  name=None):
-        """Initialize"""
+        ##################
+        """Muse Initialisation"""
+        ################
         self.address = address
         self.name = name
         self.callback = callback
