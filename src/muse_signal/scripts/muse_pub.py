@@ -11,13 +11,14 @@ from muse_signal.msg import muse_signal_msg
 
 
 
-
+# MAC address of the Muse
 address="00:55:DA:B3:EC:FF"
 
 # full_time = []
 # full_data = []
 
-print 'Initailising ROS node'
+#print 'Initailising ROS node'
+rospy.loginfo('Initailising Muse ROS node')
 pub = rospy.Publisher('muse_signal',muse_signal_msg , queue_size=100)
 rospy.init_node('muse_signal_pub', anonymous=True)
 rate = rospy.Rate(10000) # hz
@@ -53,7 +54,8 @@ while not rospy.is_shutdown():
     except:
         break
 
-print 'disconnect muse now!!'
+#print 'disconnect muse now!!'
+rospy.loginfo('disconnect Muse now!!')
 muse.stop()
 muse.disconnect()
 
