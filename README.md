@@ -87,5 +87,8 @@ sudo git clone https://github.com/Intelligent-Automation-Centre/bluebox.git
 
 ### PI-ZERO image
 
+## Contact:
+For any questions and enquires email Ali Al-Yacoub: a.al-yacoub@lboro.ac.uk
+
 ## Aknowledgment
 This work was funded by the EPSRC as part of the “Digital Toolkit for optimisation of operators and technology in manufacturing partnerships” project (DigiTOP; EP/R032718/1).
