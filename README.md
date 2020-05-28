@@ -30,8 +30,10 @@ The below shows all the sensors, which have been integrated in one ROS network. 
 
 ## Hardware setup: Integration with ROS network
 The blue-box with all sensors connected to it, which can be carried on the operator's belt, and it is connected with the workstation via WiFi. The box is connected to four muscle activity sensors (https://www.sparkfun.com/products/13723), nose digital temperature and Phedgit IMU (https://www.phidgets.com/) for head movements via shield cables, while it is connected to a Muse2 headband (https://choosemuse.com/muse-2-guided-bundle/) via Bluetooth. These sensors are interfaced with the Raspberry-Pi using two interface circuits and a USB Bluetooth dongle.
+###### Figure: Hardware Setup
 ![](https://github.com/Intelligent-Automation-Centre/bluebox/blob/master/figure3_updated-page-001.jpg)
-
+###### Figure: PI Hat (Interface cricuit between Raspberry Pi 3 and sensors)
+![](https://github.com/Intelligent-Automation-Centre/bluebox/blob/master/Blue_pi_hat.gif)
 #### Muscle-activity sensor interface circuit
 ![](https://github.com/Intelligent-Automation-Centre/bluebox/blob/master/wiring_diagram-page-001.jpg)
 ## Biomechanical ROS messages:
