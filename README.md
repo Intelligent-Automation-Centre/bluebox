@@ -1,4 +1,4 @@
-# Bluebox: ROS package for human wearable sensors  
+# Blue-box: ROS package for human wearable sensors  
 
 
 ## DigiTOP
@@ -9,19 +9,19 @@ Academics at the University of Nottingham, Cranfield University, Loughborough Un
 
 ## WP4: Physical Sensing in Human-Robot Interaction Scenarios 
 
-This Robot Operating System (ROS) package (https://www.ros.org/about-ros/) was developed as part of WP4, which focuses on wearable sensors for human in a manufacturing context, i.e. robotics. With the exponential growth of collaborative robots in manufacturing application, physical interactions between humans and robots represent a vital role in performing tasks collaboratively. Most attended studies concentrated on robot motion planning and control during the execution of a task. However, for effective task distribution and allocation, human physical and psychological status are essential. In this Github repository, a hardware setup and support software for a set of wearable sensors and a data acquisition framework, are presented, which can be used to develop more efficient Human-Robot collaboration strategies. 
+This Robot Operating System (ROS) package (https://www.ros.org/about-ros/) was developed as part of WP4, which focuses on wearable sensors for human in a manufacturing context, i.e. robotics. With the exponential growth of collaborative robots in manufacturing application, physical interactions between humans and robots represent a vital role in performing tasks collaboratively. Most contudted studies concentrated on robot motion planning and control during the execution of a task. However, for effective task distribution and allocation, human physical and psychological status are essential. In this Github repository, a hardware setup and support software for a set of wearable sensors and a data acquisition framework, are presented, which can be used to develop more efficient Human-Robot collaboration strategies. 
 
-The wearable sensors in human-robot collaborations could improve the interactions and make it safer. For instances, wearable sensors can assist in recognising the human mental state and physical activities. Subsequently, a robot could effectively and naturally perform the given task with the human. Moreover, the gathered data through the presented hardware enables online classification of human aims; consequently, robots can efficiently adapt to guarantee the safety of the human while performing the intended task. 
+The wearable sensors in human-robot collaborations could improve the interactions and make it safer. For instances, wearable sensors can assist in recognising the human mental state and physical activities. Subsequently, a robot could effectively and naturally perform the given task with the human. Moreover, the proposed setup enables collected live data during the human-robot interactions, which allows us to model the human behaviour to provide adaptable robotics controlling strategies that take the human behaviour in-consideration. Consequently, robots can efficiently adapt to human and guarantee the safety of the human while performing the intended task.  
 
-![Figure1](https://github.com/Intelligent-Automation-Centre/bluebox/blob/master/weabaleSensor-page-001.jpg)
+![Figure1](https://github.com/Intelligent-Automation-Centre/bluebox/blob/master/figure3_updated.png)
 
 ## Hardware setup: List of Sensors Used in DigiTOP WP4:
 The below shows all the sensors, which have been integrated in one ROS network. Hence, different sensors data can be collected during Human-Robot Interaction experiments. 
 |Sensors| Brand | Comments|
 |-------|-------|---------|
-| muscle activity sensor |Mayoware|<ul><li>https://medium.com/@leex5202/an-unofficial-introductory-tutorial-to-myoware-muscle-sensor-development-kit-e2169948e63</il></ul>|
+| muscle activity sensor |MyoWare|<ul><li>https://medium.com/@leex5202/an-unofficial-introductory-tutorial-to-myoware-muscle-sensor-development-kit-e2169948e63</il></ul>|
 |Brainwave EG sensor|Muse2|<ul><li>https://choosemuse.com/?mbsy_source=57f72dff-9863-4d8d-a6a8-ca173f9e01f4&mbsy_exp=Sat%2C+20+Jun+2020+00%3A32%3A26+GMT&campaignid=30373&mbsy=tF2T9&discount=ambassador_8GY1JNJDK9FF</li><li>https://github.com/alexandrebarachant/muse-lsl</li></ul>|
-|Nose tempreature|Dallas Semiconductor|<ul><li>https://cdn.sparkfun.com/datasheets/Sensors/Temp/DS18B20.pdf</il></ul>|
+|Nose temperature|Dallas Semiconductor|<ul><li>https://cdn.sparkfun.com/datasheets/Sensors/Temp/DS18B20.pdf</il></ul>|
 |Motion tracking system|VICON|<ul><li>https://www.vicon.com/hardware/cameras/</li><li>https://github.com/ethz-asl/vicon_bridge</li></ul>|
 |Heart rate sensor|PULSE|<ul><li>https://www.amazon.co.uk/ICQUANZX-Sensor-Pulsesensor-Module-Arduino/dp/B07VJ9XB7T/ref=sr_1_3?crid=3IPE6UVDULJHP&dchild=1&keywords=pulse+sensor&qid=1590022203&sprefix=pulse+se%2Caps%2C154&sr=8-3</il></ul>|
 |Inertial Momentum Unit (IMU)|Phidgets|<ul><li>https://www.phidgets.com/?&prodid=32</li><li>https://github.com/ros-drivers/phidgets_drivers</li></ul>|
@@ -29,10 +29,10 @@ The below shows all the sensors, which have been integrated in one ROS network. 
 
 
 ## Hardware setup: Integration with ROS network
-The blue-box with all sensors connected to it, which can be carried on the operator's belt, and it is connected with the workstation via WiFi. The box is connected to four muscle activity sensors (https://www.sparkfun.com/products/13723), nose digital temperature and Phedgit IMU (https://www.phidgets.com/) for head movements via shield cables, while it is connected to a Muse2 headband (https://choosemuse.com/muse-2-guided-bundle/) via Bluetooth. These sensors are interfaced with the Raspberry-Pi using two interface circuits and a USB Bluetooth dongle.
+The blue-box can be carried on the operator's belt, and it is connected with the workstation via WiFi. The box is connected to four muscle activity sensors (https://www.sparkfun.com/products/13723), nose digital temperature and Phedgit IMU (https://www.phidgets.com/) for head movements via shield cables, while it is connected to a Muse2 headband (https://choosemuse.com/muse-2-guided-bundle/) via Bluetooth. These sensors are interfaced with the Raspberry-Pi using two interface circuits and a USB Bluetooth dongle.
 ###### Figure: Hardware Setup
 ![](https://github.com/Intelligent-Automation-Centre/bluebox/blob/master/figure3_updated-page-001.jpg)
-###### Figure: PI Hat (Interface cricuit between Raspberry Pi 3 and sensors)
+###### Figure: PI Hat (Interface cricuit between Raspberry-Pi 3 and sensors)
 ![](https://github.com/Intelligent-Automation-Centre/bluebox/blob/master/Blue_pi_hat.gif)
 #### Muscle-activity sensor interface circuit
 ![](https://github.com/Intelligent-Automation-Centre/bluebox/blob/master/wiring_diagram-page-001.jpg)
@@ -55,7 +55,7 @@ The presented hardware is supported by three ROS messages which are structured a
 | AF8           | float64       |
 | TP10          | float64       |
 
-### Muscle activity message
+### Muscle-activity message
 |     Message Field   | Data Type|
 | ------------- | ------------- |
 | Header        | header        |
