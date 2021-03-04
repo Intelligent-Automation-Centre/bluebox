@@ -90,5 +90,9 @@ sudo git clone https://github.com/Intelligent-Automation-Centre/bluebox.git
 ## Contact:
 For any questions and enquires email Ali Al-Yacoub: a.al-yacoub@lboro.ac.uk
 
+## Cite this tool:
+
+Al-Yacoub, A., Buerkle, A., Flanagan, M., Ferreira, P., Hubbard, E.M. and Lohse, N., 2020, September. Effective human-robot collaboration through wearable sensors. In 2020 25th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) (Vol. 1, pp. 651-658). IEEE.
+
 ## Aknowledgment
 This work was funded by the EPSRC as part of the “Digital Toolkit for optimisation of operators and technology in manufacturing partnerships” project (DigiTOP; EP/R032718/1).
